@@ -1,0 +1,100 @@
+.p {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.p-browser {
+  height: 20px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+
+.p-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: white;
+}
+
+.p-img {
+  width: 100%;
+
+}
+
+
+img {
+  position: relative;
+  z-index: 50;
+  object-fit: cover;
+  height: 100%;
+  transition: all 0.3s ease-out;
+}
+
+
+
+/*  EFECTO HOVER  */
+a {
+  display: block;
+  background-color: yellowgreen;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.capa {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #eee;
+  background-color: rgba(11,103,123,0.6);
+  width: 100%;
+  z-index: 300;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  opacity: 0;
+  font-family: sans-serif;
+  transition: all .5s ease-out;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+a:hover > .capa {
+  opacity: 1;
+}
+
+a:hover> img {
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .p {
+    width: 40%;
+    height: 20vh;
+  }
+}
